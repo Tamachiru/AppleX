@@ -1,0 +1,5 @@
+game:GetService("ReplicatedStorage").Events.CelebrityShow.AddPlayer:FireServer()
+while true do
+wait()
+game:GetService("ReplicatedStorage").Events.CelebrityShow.PlayerScored:FireServer()
+end
