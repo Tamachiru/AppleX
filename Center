@@ -3,5 +3,5 @@ while true do
 wait(0.001)
 repeat
 game:GetService("ReplicatedStorage").Events.CelebrityShow.PlayerScored:FireServer()
-until(1)
+until(999)
 end
