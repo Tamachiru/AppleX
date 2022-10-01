@@ -26,7 +26,7 @@ local args = {
 
 game:GetService("ReplicatedStorage").Item_Distributor:FireServer(unpack(args))
 
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(11138.75, 396.52691650390625, 91.8819808959961) + Vector3.new(1,0,0)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(11117.2958984375, 396.4040832519531, 97.28189849853516) + Vector3.new(1,0,0)
 
 local args = {
     [1] = "Add_Time",
