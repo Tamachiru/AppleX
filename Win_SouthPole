@@ -10,3 +10,16 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").Speedrun_Main:FireServer(unpack(args))
+
+local args = {
+    [1] = "Add_Time",
+    [2] = "Total",
+    [3] = {
+        [1] = 0,
+        [2] = 0,
+        [3] = 0
+    },
+    [4] = game:GetService("Players").LocalPlayer
+}
+
+game:GetService("ReplicatedStorage").Speedrun_Main:FireServer(unpack(args))
