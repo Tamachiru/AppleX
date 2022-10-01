@@ -1,31 +1,3 @@
-local args = {
-    [1] = "HelmetNormal",
-    [2] = game:GetService("Players").LocalPlayer
-}
-
-game:GetService("ReplicatedStorage").Item_Distributor:FireServer(unpack(args))
-
-local args = {
-    [1] = "OutfitNormal",
-    [2] = game:GetService("Players").LocalPlayer
-}
-
-game:GetService("ReplicatedStorage").Item_Distributor:FireServer(unpack(args))
-
-local args = {
-    [1] = "BackpackNormal",
-    [2] = game:GetService("Players").LocalPlayer
-}
-
-game:GetService("ReplicatedStorage").Item_Distributor:FireServer(unpack(args))
-
-local args = {
-    [1] = "ShoesNormal",
-    [2] = game:GetService("Players").LocalPlayer
-}
-
-game:GetService("ReplicatedStorage").Item_Distributor:FireServer(unpack(args))
-
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(11117.2958984375, 396.4040832519531, 97.28189849853516) + Vector3.new(1,0,0)
 
 local args = {
