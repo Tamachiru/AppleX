@@ -12,19 +12,6 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").Coins_Award:FireServer(unpack(args))
---Speedrun_Main
-local args = {
-    [1] = "Add_Time",
-    [2] = "Camp1",
-    [3] = {
-        [1] = 0,
-        [2] = 0,
-        [3] = 0
-    },
-    [4] = game:GetService("Players").LocalPlayer
-}
-
-game:GetService("ReplicatedStorage").Speedrun_Main:FireServer(unpack(args))
 --Coins_Locations
 local args = {
     [1] = "Advanced Route 1",
