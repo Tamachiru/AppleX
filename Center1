@@ -11,8 +11,18 @@ local Window = Library.CreateLib("Expedition Antarctica", "Ocean")
     MainSection:NewButton("Win", " ", function(state)
         loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/Win_SouthPole1'))()
     end)
+    local Main = Window:NewTab("Locations")
+    local MainSection = Main:NewSection("Locations")
 
-    MainSection:NewButton("Enter Standard Plane", " ", function(state)
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/Enter_Plane1'))()
+    MainSection:NewButton("Base Camp", " ", function(state)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/Base_Camp1'))()
+    end)
+
+    MainSection:NewButton("Camp 2", " ", function(state)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/Camp2'))()
+    end)
+
+    MainSection:NewButton("Camp 3", " ", function(state)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/Camp3'))()
     end)
 end
