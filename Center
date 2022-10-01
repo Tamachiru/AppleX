@@ -7,7 +7,6 @@ game:GetService("ReplicatedStorage").Events.CelebrityShow.PlayerScored:FireServe
 until(1)
 
 if game.PlaceId == 2693023319 then
-
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Expedition Antarctica", "Ocean")
     local Main = Window:NewTab("Main")
