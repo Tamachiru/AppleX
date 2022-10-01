@@ -1,0 +1,18 @@
+if game.PlaceId == 2693023319 then
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Expedition Antarctica", "Ocean")
+    local Main = Window:NewTab("Main")
+    local MainSection = Main:NewSection("Main")
+
+    MainSection:NewButton("Get Coins", "1000 Coins", function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/Coin_Award1'))()
+    end)
+
+    MainSection:NewButton("Win", " ", function(state)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/Win_SouthPole1'))()
+    end)
+
+    MainSection:NewButton("Enter Standard Plane", " ", function(state)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/Enter_Plane1'))()
+    end)
+end
