@@ -8,21 +8,25 @@ local Window = Library.CreateLib("Expedition Antarctica", "Ocean")
         loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/Coin_Award1'))()
     end)
 
-    MainSection:NewButton("Win", " ", function(state)
+    MainSection:NewButton("Win", "", function(state)
         loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/Win_SouthPole1'))()
     end)
     local Main = Window:NewTab("Locations")
     local MainSection = Main:NewSection("Locations")
 
-    MainSection:NewButton("Base Camp", " ", function(state)
+    MainSection:NewButton("Base Camp", "", function(state)
         loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/Base_Camp1'))()
     end)
 
-    MainSection:NewButton("Camp 2", " ", function(state)
+    MainSection:NewButton("Camp 2", "", function(state)
         loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/Camp2'))()
     end)
 
-    MainSection:NewButton("Camp 3", " ", function(state)
+    MainSection:NewButton("Camp 3", "", function(state)
         loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/Camp3'))()
+    end)
+    
+    MainSection:NewButton("South Pole", "", function(state)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/SouthPole1'))()
     end)
 end
