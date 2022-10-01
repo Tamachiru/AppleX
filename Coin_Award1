@@ -7,7 +7,7 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").Coins_Locations:FireServer(unpack(args))
-
+--Coins_Awards
 local args = {
     [1] = 1000,
     [2] = "the South Pole"
