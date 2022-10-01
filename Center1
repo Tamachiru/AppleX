@@ -17,6 +17,10 @@ local Window = Library.CreateLib("Expedition Antarctica", "Ocean")
     MainSection:NewButton("Base Camp", "", function(state)
         loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/Base_Camp1'))()
     end)
+    
+        MainSection:NewButton("Camp 1", "", function(state)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/Camp1'))()
+    end)
 
     MainSection:NewButton("Camp 2", "", function(state)
         loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/Camp2'))()
