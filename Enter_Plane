@@ -1,0 +1,6 @@
+local args = {
+    [1] = "Enter_Plane",
+    [2] = "Standard"
+}
+
+game:GetService("ReplicatedStorage").Plane_Main:FireServer(unpack(args))
