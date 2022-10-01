@@ -5,6 +5,7 @@ wait(0.001)
 repeat
 game:GetService("ReplicatedStorage").Events.CelebrityShow.PlayerScored:FireServer()
 until(1)
+end
 
 if game.PlaceId == 2693023319 then
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
