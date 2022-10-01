@@ -34,7 +34,7 @@ local Window = Library.CreateLib("Expedition Antarctica", "Ocean")
         loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/SouthPole1'))()
     end)
     
-        MainSection:NewButton("Standard Plane", " ", function(state)
+        MainSection:NewButton("Standard Plane", "", function(state)
         loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/Enter_Plane1'))()
     end)
 end
