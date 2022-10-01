@@ -1,7 +1,7 @@
 game:GetService("ReplicatedStorage").Events.CelebrityShow.AddPlayer:FireServer()
-repeat
 while true do
 wait(0.001)
+repeat
 game:GetService("ReplicatedStorage").Events.CelebrityShow.PlayerScored:FireServer()
 until(1)
 end
