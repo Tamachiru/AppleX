@@ -1,0 +1,10 @@
+if game.PlaceId == 10903978962 then
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("[NEW] Sheep Tycoon 🐑", "Ocean")
+    local Main = Window:NewTab("Main")
+    local MainSection = Main:NewSection("Main")
+
+    MainSection:NewButton("Wool", "83.1M", function()
+        loadstring(game:HttpGet(''))()
+    end)
+end
