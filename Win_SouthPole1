@@ -1,4 +1,4 @@
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(11117.2958984375, 396.4040832519531, 97.28189849853516) + Vector3.new(1,0,0)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(11131.7373046875, 391.7999267578125, 116.96823120117188)
 
 local args = {
     [1] = "Add_Time",
