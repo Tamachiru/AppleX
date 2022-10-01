@@ -1,4 +1,3 @@
-if game.PlaceId == 10895555747 then
 game:GetService("ReplicatedStorage").Events.CelebrityShow.AddPlayer:FireServer()
 while true do
 wait(0.001)
