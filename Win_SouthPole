@@ -1,4 +1,32 @@
 local args = {
+    [1] = "HelmetNormal",
+    [2] = game:GetService("Players").LocalPlayer
+}
+
+game:GetService("ReplicatedStorage").Item_Distributor:FireServer(unpack(args))
+
+local args = {
+    [1] = "OutfitNormal",
+    [2] = game:GetService("Players").LocalPlayer
+}
+
+game:GetService("ReplicatedStorage").Item_Distributor:FireServer(unpack(args))
+
+local args = {
+    [1] = "BackpackNormal",
+    [2] = game:GetService("Players").LocalPlayer
+}
+
+game:GetService("ReplicatedStorage").Item_Distributor:FireServer(unpack(args))
+
+local args = {
+    [1] = "ShoesNormal",
+    [2] = game:GetService("Players").LocalPlayer
+}
+
+game:GetService("ReplicatedStorage").Item_Distributor:FireServer(unpack(args))
+
+local args = {
     [1] = "Add_Time",
     [2] = "SP",
     [3] = {
