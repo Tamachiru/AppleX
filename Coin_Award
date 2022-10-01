@@ -1,3 +1,5 @@
+while true do
+wait(0.001)
 --Coins_Locations
 local args = {
     [1] = "Camp 2",
@@ -27,3 +29,4 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").Coins_Award:FireServer(unpack(args))
+end
