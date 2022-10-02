@@ -1,16 +1,16 @@
 if game.PlaceId == 10492057600 then
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("raise a silly cat", "DarkTheme")
+local Window = Library.CreateLib("raise a silly cat 😈", "DarkTheme")
     local Main = Window:NewTab("Kill Menu")
-    local MainSection = Main:NewSection("Kill Menu")
+    local MainSection = Main:NewSection("Kill Menu 😈")
 
     MainSection:NewButton("LOUD SOUND!!!", "inf Volume", function()
         local args = {
     [1] = {
-        ["Name"] = " ",
-        ["Description"] = " ",
+        ["Name"] = "😈😈😈😈😈😈😈😈",
+        ["Description"] = "😈😈😈😈😈😈😈",
         ["Icon"] = "rbxassetid://10716387829",
-        ["Artist"] = " ",
+        ["Artist"] = "😈😈😈😈😈😈😈😈",
         ["Sound"] = "rbxassetid://8280196339"
     }
 }
