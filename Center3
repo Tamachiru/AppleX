@@ -7,14 +7,28 @@ local Window = Library.CreateLib("raise a silly cat 😈", "DarkTheme")
     MainSection:NewButton("LOUD SOUND!!!", "inf Volume", function()
         local args = {
     [1] = {
-        ["Name"] = "😈😈😈😈😈😈😈😈",
-        ["Description"] = "😈😈😈😈😈😈😈",
+        ["Name"] = "😈😈😈😈😈",
+        ["Description"] = "😈😈😈😈😈",
         ["Icon"] = "rbxassetid://10716387829",
-        ["Artist"] = "😈😈😈😈😈😈😈😈",
+        ["Artist"] = "😈😈😈😈😈",
         ["Sound"] = "rbxassetid://8280196339"
     }
 }
 
 game:GetService("ReplicatedStorage").Events.changeSong:FireServer(unpack(args))
     end)
+
+MainSection:NewButton("Stop Sound", " ", function()
+local args = {
+    [1] = {
+        ["Name"] = " ",
+        ["Description"] = " ",
+        ["Icon"] = "rbxassetid://10531180024",
+        ["Artist"] = " ",
+        ["Sound"] = ""
+    }
+}
+
+game:GetService("ReplicatedStorage").Events.changeSong:FireServer(unpack(args))
+   end)
 end
