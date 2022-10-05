@@ -1,14 +1,19 @@
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Apple X",
+	Text = "Our discord server has been copied to your clipboard",
+})
+setclipboard("https://discord.gg/R5t7ubNUHe")
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Mo's Academy Beta", "Synapse")
     local Main = Window:NewTab("OP")
-    local MainSection = Main:NewSection("")
+    local MainSection = Main:NewSection(" ")
 
     MainSection:NewButton("Money", "", function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/Get_Money'))()
     end)
     
     local Main = Window:NewTab("Foods")
-    local MainSection = Main:NewSection("Main")
+    local MainSection = Main:NewSection("Foods")
     
    MainSection:NewButton("Apple", "", function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/Get_Apple'))()
@@ -31,7 +36,7 @@ local Window = Library.CreateLib("Mo's Academy Beta", "Synapse")
     end)
     
     local Main = Window:NewTab("Weapons")
-    local MainSection = Main:NewSection("")
+    local MainSection = Main:NewSection("Weapons")
     
         MainSection:NewButton("Hammer", "", function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/Get_Hammer'))()
@@ -43,4 +48,3 @@ local Window = Library.CreateLib("Mo's Academy Beta", "Synapse")
         MainSection:NewButton("Slingshot", "", function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/Get_Slingshot'))()
     end)
-end
