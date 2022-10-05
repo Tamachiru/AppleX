@@ -1,0 +1,5 @@
+local args = {
+    [1] = "Coffee"
+}
+
+game:GetService("ReplicatedStorage").Remotes["TakeItem"]:FireServer(unpack(args))
