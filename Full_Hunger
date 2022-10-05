@@ -1,8 +1,0 @@
-local args = {
-    [1] = "UpdateHunger",
-    [2] = {
-        ["Value"] = 100
-    }
-}
-
-game:GetService("ReplicatedStorage").Game.EVENT_MAIN:FireServer(unpack(args))
