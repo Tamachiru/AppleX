@@ -52,7 +52,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Mo's Academy Beta", "Synapse")
-    local Main = Window:NewTab("OP")
+    local Main = Window:NewTab("Money")
     local MainSection = Main:NewSection(" ")
 
     MainSection:NewButton("Money", "", function()
