@@ -1,0 +1,46 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Mo's Academy Beta", "Synapse")
+    local Main = Window:NewTab("OP")
+    local MainSection = Main:NewSection("")
+
+    MainSection:NewButton("Money", "", function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/Get_Money'))()
+    end)
+    
+    local Main = Window:NewTab("Foods")
+    local MainSection = Main:NewSection("Main")
+    
+   MainSection:NewButton("Apple", "", function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/Get_Apple'))()
+    end)
+    
+    MainSection:NewButton("Cheese", "", function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/Get_Cheese'))()
+    end)
+    
+    MainSection:NewButton("Banana", "", function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/Get_Banana'))()
+    end)
+    
+     MainSection:NewButton("Chicken", "", function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/Get_Chicken'))()
+    end)
+    
+     MainSection:NewButton("Coffee", "", function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/Get_Coffee'))()
+    end)
+    
+    local Main = Window:NewTab("Weapons")
+    local MainSection = Main:NewSection("")
+    
+        MainSection:NewButton("Hammer", "", function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/Get_Hammer'))()
+    end)
+        
+        MainSection:NewButton("Bat", "", function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/Get_Bat'))()
+    end)
+        MainSection:NewButton("Slingshot", "", function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/Get_Slingshot'))()
+    end)
+end
