@@ -82,6 +82,15 @@ local Window = Library.CreateLib("Mo's Academy Beta", "Synapse")
      MainSection:NewButton("Coffee", "", function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/Get_Coffee'))()
     end)
+
+    local MainSection = Main:NewSection("Tools")
+MainSection:NewButton("Medkit", "", function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/Get_Medkit'))()
+    end)
+
+MainSection:NewButton("Medkit", "", function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/Get_Notebook'))()
+    end)
     
     local Main = Window:NewTab("Weapons")
     local MainSection = Main:NewSection("Weapons")
