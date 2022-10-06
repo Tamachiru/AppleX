@@ -1,0 +1,15 @@
+if game.PlaceId == 10895555747 then -- Walmart Land
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Tamachiru/AppleX/main/1"))()
+
+elseif game.PlaceId == 2693023319 then -- 🚩Expedition Antarctica
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Tamachiru/AppleX/main/Center1"))()
+
+elseif game.PlaceId == 10903978962 then -- Sheep Tycoon 🐑
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/Center2'))()
+
+elseif game.PlaceId == 2561448528 then -- Your Local Mechanic
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Tamachiru/AppleX/main/Center3"))()
+
+elseif game.PlaceId == 8929050629 then -- Mo's Academy
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Tamachiru/AppleX/main/Center4"))()
+end
