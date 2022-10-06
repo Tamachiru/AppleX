@@ -9,7 +9,4 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main
 
 elseif game.PlaceId == 2561448528 then -- Your Local Mechanic
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Tamachiru/AppleX/main/Center3"))()
-
-elseif game.PlaceId == 8929050629 then -- Mo's Academy
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Tamachiru/AppleX/main/Center4"))()
 end
