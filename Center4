@@ -42,6 +42,7 @@ local Settings = {
             end
             spawn(DiscordInviteRequest)
         end
+wait(4)
 
 game:GetService("StarterGui"):SetCore("SendNotification",{
 	Title = "Apple X",
