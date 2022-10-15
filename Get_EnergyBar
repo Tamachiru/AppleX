@@ -1,4 +1,0 @@
-local ohString1 = "Equip"
-local ohInstance2 = workspace.Model.Plate.Attachment["Energy Bar"]
-
-game:GetService("ReplicatedStorage").Tools_Main:FireServer(ohString1, ohInstance2)
