@@ -52,8 +52,8 @@ game:GetService("ReplicatedStorage")["AlertEvent"]:FireServer(unpack(args))
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("steal a bank to get some beans", "Synapse")
-    local Main = Window:NewTab("Tab")
-    local MainSection = Main:NewSection("Section")
+    local Main = Window:NewTab("Steal Bank")
+    local MainSection = Main:NewSection("Steal Bank")
 
     MainSection:NewButton("Steal the bank (Sneaky)", "", function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/Steal_Bank'))()
