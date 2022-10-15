@@ -43,17 +43,22 @@ local Settings = {
             spawn(DiscordInviteRequest)
         end
 wait(2)
+local args = {
+    [1] = "Event",
+    [2] = "Enjoy my script ;)"
+}
 
-game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "Apple X",
-	Text = "Welcome",
-})
+game:GetService("ReplicatedStorage")["AlertEvent"]:FireServer(unpack(args))
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Title", "Synapse")
+local Window = Library.CreateLib("steal a bank to get some beans", "Synapse")
     local Main = Window:NewTab("Tab")
     local MainSection = Main:NewSection("Section")
 
-    MainSection:NewButton("Button", "", function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/'))()
+    MainSection:NewButton("Steal the bank (Sneaky)", "", function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/Steal_Bank'))()
+    end)
+    
+        MainSection:NewButton("Steal the bank (Not sneaky)", "", function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/Steal_Bank1'))()
     end)
