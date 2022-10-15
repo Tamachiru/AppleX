@@ -1,0 +1,70 @@
+
+local args = {
+    [1] = "StoryStep",
+    [2] = 0
+}
+
+game:GetService("ReplicatedStorage").SetStoryVal2:FireServer(unpack(args))
+
+local args = {
+    [1] = "PathChosen",
+    [2] = "h"
+}
+
+game:GetService("ReplicatedStorage").SetStoryVal2:FireServer(unpack(args))
+
+local args = {
+    [1] = "StoryStep",
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage")["SetStoryVal2"]:FireServer(unpack(args))
+
+local args = {
+    [1] = "StoryStep",
+    [2] = 2
+}
+
+game:GetService("ReplicatedStorage")["SetStoryVal2"]:FireServer(unpack(args))
+
+local args = {
+    [1] = "StoryStep",
+    [2] = 3
+}
+
+game:GetService("ReplicatedStorage")["SetStoryVal2"]:FireServer(unpack(args))
+
+local args = {
+    [1] = "StoryStep",
+    [2] = 4
+}
+
+game:GetService("ReplicatedStorage")["SetStoryVal2"]:FireServer(unpack(args))
+
+local args = {
+    [1] = "StoryStep",
+    [2] = 5
+}
+
+game:GetService("ReplicatedStorage")["SetStoryVal2"]:FireServer(unpack(args))
+
+local args = {
+    [1] = "StoryStep",
+    [2] = 6
+}
+
+game:GetService("ReplicatedStorage")["SetStoryVal2"]:FireServer(unpack(args))
+
+local args = {
+    [1] = "StoryStep",
+    [2] = 7
+}
+
+game:GetService("ReplicatedStorage")["SetStoryVal2"]:FireServer(unpack(args))
+
+local args = {
+    [1] = "StoryStep",
+    [2] = 8
+}
+
+game:GetService("ReplicatedStorage")["SetStoryVal2"]:FireServer(unpack(args))
