@@ -10,6 +10,6 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main
 elseif game.PlaceId == 2561448528 then -- Your Local Mechanic
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Tamachiru/AppleX/main/4"))()
 
-elseif game.PlaceId == ID then -- Game
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/ '))()
+elseif game.PlaceId == 5150267415 then -- steal a bank to get some beans
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/5'))()
 end
