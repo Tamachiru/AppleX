@@ -42,13 +42,14 @@ local Settings = {
             end
             spawn(DiscordInviteRequest)
         end
-wait(4)
-local args = {
+        
+        local args = {
     [1] = "Event",
     [2] = "Enjoy my script ;)"
 }
 
 game:GetService("ReplicatedStorage")["AlertEvent"]:FireServer(unpack(args))
+wait(7)
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("steal a bank to get some beans", "Synapse")
