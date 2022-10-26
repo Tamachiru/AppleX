@@ -1,0 +1,7 @@
+while true do
+wait(0.001)
+
+local ohNumber1 = 1
+
+game:GetService("ReplicatedStorage").RemoteEvents.GiveTopSpeed:FireServer(ohNumber1)
+end
