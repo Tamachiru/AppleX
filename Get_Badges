@@ -1,10 +1,4 @@
 local args = {
-    [1] = 2128525373
-}
-
-game:GetService("ReplicatedStorage").Shared.AwardBadge.CallToServer:FireServer(unpack(args))
-
-local args = {
     [1] = 2128525400
 }
 
