@@ -13,3 +13,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Tamachiru/AppleX/main
 elseif game.PlaceId == 5150267415 then -- steal a bank to get some beans
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/5'))()
 end
+
+elseif game.PlaceId == 10758955211 then -- 🪐 [SPACE] 🏆 Skydive Race Clicker
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/6'))()
+end
