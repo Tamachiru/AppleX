@@ -12,4 +12,7 @@ elseif game.PlaceId == 5150267415 then -- steal a bank to get some beans
 
 elseif game.PlaceId == 10758955211 then -- 🪐 [SPACE] 🏆 Skydive Race Clicker
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/5'))()
+	
+elseif game.PlaceId == 9534337535 then -- 💰 Shrek in the Backrooms
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/6'))()
 end
