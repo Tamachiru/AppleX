@@ -15,4 +15,7 @@ elseif game.PlaceId == 10758955211 then -- 🪐 [SPACE] 🏆 Skydive Race Clicke
 	
 elseif game.PlaceId == 9534337535 then -- 💰 Shrek in the Backrooms
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/6'))()
+	
+elseif game.PlaceId == 11216791462 then -- Hungry Pig
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/7'))()
 end
