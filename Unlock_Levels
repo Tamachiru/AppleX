@@ -101,3 +101,31 @@ local args = {
 }
  
 game:GetService("ReplicatedStorage").Remotes.NewMap:FireServer(unpack(args))
+
+local args = {
+    [1] = "Enter",
+    [2] = "Level 188"
+}
+ 
+game:GetService("ReplicatedStorage").Remotes.NewMap:FireServer(unpack(args))
+
+local args = {
+    [1] = "Enter",
+    [2] = "The Vents"
+}
+ 
+game:GetService("ReplicatedStorage").Remotes.NewMap:FireServer(unpack(args))
+
+local args = {
+    [1] = "Enter",
+    [2] = "The Arcade"
+}
+ 
+game:GetService("ReplicatedStorage").Remotes.NewMap:FireServer(unpack(args))
+
+local args = {
+    [1] = "Enter",
+    [2] = "Iron Sub"
+}
+ 
+game:GetService("ReplicatedStorage").Remotes.NewMap:FireServer(unpack(args))
