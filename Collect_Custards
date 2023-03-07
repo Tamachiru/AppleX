@@ -1,3 +1,3 @@
-while wait(0.6) do
+while wait(0.7) do
 	game:GetService("ReplicatedStorage").collectedCustardEvent:FireServer()
 end
