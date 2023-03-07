@@ -18,4 +18,7 @@ elseif game.PlaceId == 9534337535 then -- 💰 Shrek in the Backrooms
 	
 elseif game.PlaceId == 11216791462 then -- Hungry Pig
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/7'))()
+	
+elseif game.PlaceId == 8122612051 then -- Slendytubbies VS Redux
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/8'))()
 end
