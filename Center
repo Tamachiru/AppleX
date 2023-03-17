@@ -21,4 +21,7 @@ elseif game.PlaceId == 11216791462 then -- Hungry Pig
 	
 elseif game.PlaceId == 8122612051 then -- Slendytubbies VS Redux
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/8'))()
+	
+elseif game.PlaceId == 12707995805 then -- Fill In the Blank
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/9'))()
 end
