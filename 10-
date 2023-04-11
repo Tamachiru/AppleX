@@ -42,7 +42,7 @@ local function sayNumber(n)
     local remainingLetters = string.sub(numberText, 2)
     local formattedText = firstLetter:upper() .. remainingLetters:lower()
     local args = {
-        [1] = formattedText,
+        [1] = formattedText..".",
         [2] = "All"
     }
     game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
