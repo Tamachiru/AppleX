@@ -155,11 +155,11 @@ end
 
 local function onInputBegan(input, gameProcessedEvent)
     if gameProcessedEvent then return end
-    if input.KeyCode == Enum.KeyCode.KeypadOne then
+    if input.KeyCode == Enum.KeyCode.KeypadFour then
         start()
-    elseif input.KeyCode == Enum.KeyCode.KeypadTwo then
+    elseif input.KeyCode == Enum.KeyCode.KeypadFive then
         stop()
-    elseif input.KeyCode == Enum.KeyCode.KeypadThree then
+    elseif input.KeyCode == Enum.KeyCode.KeypadSix then
         restart()
     end
 end
