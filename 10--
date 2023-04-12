@@ -96,7 +96,14 @@ local function sayNumber(n)
     game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 end
 
+local function stop()
+    running = false
+end
 
+local function restart()
+    i = 1
+	running = false
+end
 
 local function onInputBegan(input, gameProcessedEvent)
     if gameProcessedEvent then return end
