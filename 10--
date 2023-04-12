@@ -60,7 +60,7 @@ end
 
 local function start()
     running2 = true
-    wait(2)
+    wait(0.5)
     while running2 do
         local numberText = numberToWords(i)
         for j=1,#numberText do
