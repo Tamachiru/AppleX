@@ -52,7 +52,7 @@ end
 
 local function start()
     running = true
-    wait(2)
+    wait(0.5)
     while running do
         sayNumber(i)
         humanoid.Jump = true
