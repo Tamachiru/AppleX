@@ -1,0 +1,112 @@
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:wait()
+local humanoid = character:WaitForChild("Humanoid")
+local userInputService = game:GetService("UserInputService")
+
+local running2 = false
+local i = 1
+local numberNames = {
+    [0] = "ZERO",
+    "ONE", "TWO", "THREE", "FOUR", "FIVE", "SIX", "SEVEN", "EIGHT", "NINE",
+    "TEN", "ELEVEN", "TWELVE", "THIRTEEN", "FOURTEEN", "FIFTEEN", "SIXTEEN",
+    "SEVENTEEN", "EIGHTEEN", "NINETEEN",
+    [20] = "TWENTY", [30] = "THIRTY", [40] = "FORTY", [50] = "FIFTY",
+    [60] = "SIXTY", [70] = "SEVENTY", [80] = "EIGHTY", [90] = "NINETY"
+}
+
+local function numberToWords(n)
+    if n < 20 then
+        return numberNames[n]
+    elseif n < 100 then
+        local tens = numberNames[math.floor(n / 10) * 10]
+        local ones = numberNames[n % 10]
+        return tens .. (ones ~= "ZERO" and " " .. ones or "")
+    elseif n < 1000 then
+        local hundreds = numberNames[math.floor(n / 100)]
+        local tens = numberToWords(n % 100)
+        return hundreds .. " HUNDRED" .. (tens ~= "ZERO" and " " .. tens or "")
+    elseif n < 1000000 then
+        local thousands = numberToWords(math.floor(n / 1000))
+        local hundreds = numberToWords(n % 1000)
+        return thousands .. " THOUSAND" .. (hundreds ~= "ZERO" and " " .. hundreds or "")
+    elseif n < 1000000000 then
+        local millions = numberToWords(math.floor(n / 1000000))
+        local thousands = numberToWords(n % 1000000)
+        return millions .. " MILLION" .. (thousands ~= "ZERO" and " " .. thousands or "")
+    end
+end
+
+local function sayLetter(l)
+    local letterText = string.sub(numberToWords(i), l, l)
+    local args = {
+        [1] = letterText:upper(),
+        [2] = "All"
+    }
+    game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+end
+
+local function sayNumber()
+    local numberText = numberToWords(i)
+    local firstLetter = string.sub(numberText, 1, 1)
+    local remainingLetters = string.sub(numberText, 2)
+    local formattedText = firstLetter:upper() .. remainingLetters:upper()
+    local args = {
+        [1] = formattedText,
+        [2] = "All"
+    }
+    game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+    humanoid.Jump = true
+end
+
+local function start()
+    running2 = true
+    wait(2)
+    while running2 do
+        local numberText = numberToWords(i)
+        for j=1,#numberText do
+            local currentLetter = string.sub(numberText, j, j)
+            if currentLetter ~= " " then
+                sayLetter(j)
+                humanoid.Jump = true
+                wait(math.random(2, 3))
+            end
+        end
+        sayNumber(i)
+        i = i + 1
+        wait(math.random(2, 3))
+    end
+end
+
+
+local function sayNumber(n)
+    local numberText = numberToWords(n)
+    local formattedText = ""
+    for i = 1, #numberText do
+        local currentLetter = string.sub(numberText, i, i)
+        if currentLetter ~= " " then
+            formattedText = formattedText .. currentLetter:upper() .. " "
+        else
+            formattedText = formattedText .. currentLetter
+        end
+    end
+    local args = {
+        [1] = formattedText,
+        [2] = "All"
+    }
+    game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+end
+
+
+
+local function onInputBegan(input, gameProcessedEvent)
+    if gameProcessedEvent then return end
+    if input.KeyCode == Enum.KeyCode.KeypadSeven then
+        start()
+    elseif input.KeyCode == Enum.KeyCode.KeypadEight then
+        stop()
+    elseif input.KeyCode == Enum.KeyCode.KeypadNine then
+        restart()
+    end
+end
+
+userInputService.InputBegan:Connect(onInputBegan)
