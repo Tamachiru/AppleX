@@ -1,3 +1,5 @@
+-- Hell Jumping Jacks
+
 local player = game.Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:wait()
 local humanoid = character:WaitForChild("Humanoid")
