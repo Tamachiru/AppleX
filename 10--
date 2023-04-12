@@ -97,12 +97,12 @@ local function sayNumber(n)
 end
 
 local function stop()
-    running = false
+    running2 = false
 end
 
 local function restart()
     i = 1
-	running = false
+	running2 = false
 end
 
 local function onInputBegan(input, gameProcessedEvent)
