@@ -1,3 +1,5 @@
+-- Good Jumping Jacks
+
 local player = game.Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:wait()
 local humanoid = character:WaitForChild("Humanoid")
@@ -70,18 +72,18 @@ end
 
 local function onInputBegan(input, gameProcessedEvent)
     if gameProcessedEvent then return end
-    if input.KeyCode == Enum.KeyCode.KeypadFour then
+    if input.KeyCode == Enum.KeyCode.KeypadSeven then
         start()
-    elseif input.KeyCode == Enum.KeyCode.KeypadFive then
+    elseif input.KeyCode == Enum.KeyCode.KeypadEight then
         stop()
-    elseif input.KeyCode == Enum.KeyCode.KeypadSix then
+    elseif input.KeyCode == Enum.KeyCode.KeypadNine then
         restart()
     end
 end
 
 userInputService.InputBegan:Connect(onInputBegan)
 
-
+-- Jumping Jacks with no '!'
 
 local player = game.Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:wait()
