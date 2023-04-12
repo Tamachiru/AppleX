@@ -5,7 +5,7 @@ local character = player.Character or player.CharacterAdded:wait()
 local humanoid = character:WaitForChild("Humanoid")
 local userInputService = game:GetService("UserInputService")
 
-local running2 = false
+local running3 = false
 local i = 1
 local numberNames = {
     [0] = "ZERO",
@@ -61,11 +61,12 @@ local function sayNumber()
 end
 
 local function start()
-    running2 = true
-    while running2 do
+    running3 = true
+    while running3 do
+    wait(0,5)
         local numberText = numberToWords(i)
         for j=1,#numberText do
-            if not running2 then
+            if not running3 then
                 break
             end
             local currentLetter = string.sub(numberText, j, j)
@@ -75,7 +76,7 @@ local function start()
                 wait(math.random(1, 2))
             end
         end
-        if running2 then
+        if running3 then
             sayNumber(i)
             i = i + 1
             wait(math.random(2, 3))
@@ -103,13 +104,13 @@ local function sayNumber(n)
 end
 
 local function stop()
-   running2 = false
+   running3 = false
 end
 
 
 local function restart()
     i = 1
-    running2 = false
+    running3 = false
 end
 
 local function onInputBegan(input, gameProcessedEvent)
