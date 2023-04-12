@@ -72,11 +72,11 @@ end
 
 local function onInputBegan(input, gameProcessedEvent)
     if gameProcessedEvent then return end
-    if input.KeyCode == Enum.KeyCode.KeypadSeven then
+    if input.KeyCode == Enum.KeyCode.KeypadOne then
         start()
-    elseif input.KeyCode == Enum.KeyCode.KeypadEight then
+    elseif input.KeyCode == Enum.KeyCode.KeypadTwo then
         stop()
-    elseif input.KeyCode == Enum.KeyCode.KeypadNine then
+    elseif input.KeyCode == Enum.KeyCode.KeypadThree then
         restart()
     end
 end
