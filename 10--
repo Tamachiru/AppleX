@@ -64,6 +64,9 @@ local function start()
     while running2 do
         local numberText = numberToWords(i)
         for j=1,#numberText do
+            if not running2 then
+                break
+            end
             local currentLetter = string.sub(numberText, j, j)
             if currentLetter ~= " " then
                 sayLetter(j)
@@ -71,9 +74,11 @@ local function start()
                 wait(math.random(2, 3))
             end
         end
-        sayNumber(i)
-        i = i + 1
-        wait(math.random(2, 3))
+        if running2 then
+            sayNumber(i)
+            i = i + 1
+            wait(math.random(2, 3))
+        end
     end
 end
 
@@ -97,12 +102,13 @@ local function sayNumber(n)
 end
 
 local function stop()
-    running2 = false
+   running2 = false
 end
+
 
 local function restart()
     i = 1
-	running2 = false
+    running2 = false
 end
 
 local function onInputBegan(input, gameProcessedEvent)
