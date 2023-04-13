@@ -5,7 +5,7 @@ local character = player.Character or player.CharacterAdded:wait()
 local humanoid = character:WaitForChild("Humanoid")
 local userInputService = game:GetService("UserInputService")
 
-local running2 = false
+local running4 = false
 local i = 1
 local numberNames = {
     [0] = "ZERO",
@@ -44,16 +44,16 @@ local function sayNumber(n)
     local remainingLetters = string.sub(numberText, 2)
     local formattedText = firstLetter:upper() .. remainingLetters:upper()
     local args = {
-        [1] = formattedText .. "!",
+        [1] = formattedText.. "!",
         [2] = "All"
     }
     game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 end
 
 local function start()
-    running2 = true
+    running4 = true
     wait(2)
-    while running2 do
+    while running4 do
         sayNumber(i)
         humanoid.Jump = true
         i = i + 1
@@ -62,12 +62,12 @@ local function start()
 end
 
 local function stop()
-    running2 = false
+    running4 = false
 end
 
 local function restart()
     i = 1
-	running2 = false
+	running4 = false
 end
 
 local function onInputBegan(input, gameProcessedEvent)
