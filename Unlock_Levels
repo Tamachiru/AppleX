@@ -122,3 +122,108 @@ local args = {
 }
  
 game:GetService("ReplicatedStorage").Remotes.NewMap:FireServer(unpack(args))
+
+local args = {
+    [1] = "Enter",
+    [2] = "The Airport"
+}
+ 
+game:GetService("ReplicatedStorage").Remotes.NewMap:FireServer(unpack(args))
+
+local args = {
+    [1] = "Enter",
+    [2] = "Level 36.1"
+}
+ 
+game:GetService("ReplicatedStorage").Remotes.NewMap:FireServer(unpack(args))
+
+local args = {
+    [1] = "Enter",
+    [2] = "Plane Crash"
+}
+ 
+game:GetService("ReplicatedStorage").Remotes.NewMap:FireServer(unpack(args))
+
+local args = {
+    [1] = "Enter",
+    [2] = "Room of Levers"
+}
+ 
+game:GetService("ReplicatedStorage").Remotes.NewMap:FireServer(unpack(args))
+
+local args = {
+    [1] = "Enter",
+    [2] = "The Lab"
+}
+ 
+game:GetService("ReplicatedStorage").Remotes.NewMap:FireServer(unpack(args))
+
+local args = {
+    [1] = "Enter",
+    [2] = "Toxic Rooms"
+}
+ 
+game:GetService("ReplicatedStorage").Remotes.NewMap:FireServer(unpack(args))
+
+local args = {
+    [1] = "Enter",
+    [2] = "Pipe Dreams"
+}
+ 
+game:GetService("ReplicatedStorage").Remotes.NewMap:FireServer(unpack(args))
+
+local args = {
+    [1] = "Enter",
+    [2] = "Anomaly Stairs"
+}
+ 
+game:GetService("ReplicatedStorage").Remotes.NewMap:FireServer(unpack(args))
+
+local args = {
+    [1] = "Enter",
+    [2] = "Cave System"
+}
+ 
+game:GetService("ReplicatedStorage").Remotes.NewMap:FireServer(unpack(args))
+
+local args = {
+    [1] = "Enter",
+    [2] = "Wooden Kingdom"
+}
+ 
+game:GetService("ReplicatedStorage").Remotes.NewMap:FireServer(unpack(args))
+
+local args = {
+    [1] = "Enter",
+    [2] = "Infinite Basement"
+}
+ 
+game:GetService("ReplicatedStorage").Remotes.NewMap:FireServer(unpack(args))
+
+local args = {
+    [1] = "Enter",
+    [2] = "The School"
+}
+ 
+game:GetService("ReplicatedStorage").Remotes.NewMap:FireServer(unpack(args))
+
+local args = {
+    [1] = "Enter",
+    [2] = "Furniture Store"
+}
+ 
+game:GetService("ReplicatedStorage").Remotes.NewMap:FireServer(unpack(args))
+
+local args = {
+    [1] = "Enter",
+    [2] = "Waffle Rooms"
+}
+ 
+game:GetService("ReplicatedStorage").Remotes.NewMap:FireServer(unpack(args))
+
+local args = {
+    [1] = "Enter",
+    [2] = "Pink Rooms"
+}
+ 
+game:GetService("ReplicatedStorage").Remotes.NewMap:FireServer(unpack(args))
