@@ -1,30 +1,20 @@
-if game.PlaceId == 2693023319 then -- 🚩Expedition Antarctica
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Tamachiru/AppleX/main/1"))()
+local scripts = {
+    [2693023319] = "1",
+    [10903978962] = "2",
+    [2561448528] = "3",
+    [5150267415] = "4",
+    [10758955211] = "5",
+    [9534337535] = "6",
+    [11216791462] = "7",
+    [8122612051] = "8",
+    [12707995805] = "9",
+    [13837271950] = "11"
+}
 
-elseif game.PlaceId == 10903978962 then -- Sheep Tycoon 🐑
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/2'))()
+local id = scripts[game.PlaceId]
 
-elseif game.PlaceId == 2561448528 then -- Your Local Mechanic
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Tamachiru/AppleX/main/3"))()
-
-elseif game.PlaceId == 5150267415 then -- steal a bank to get some beans
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/4'))()
-
-elseif game.PlaceId == 10758955211 then -- 🪐 [SPACE] 🏆 Skydive Race Clicker
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/5'))()
-	
-elseif game.PlaceId == 9534337535 then -- 💰 Shrek in the Backrooms
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/6'))()
-	
-elseif game.PlaceId == 11216791462 then -- Hungry Pig
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/7'))()
-	
-elseif game.PlaceId == 8122612051 then -- Slendytubbies VS Redux
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/8'))()
-	
-elseif game.PlaceId == 12707995805 then -- Fill In the Blank
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/9'))()
-
-elseif game.PlaceId == 13837271950 then -- [1070] Find the FNAF Character!
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/Tamachiru/AppleX/main/11'))()
+if id then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Tamachiru/AppleX/main/" .. id))()
+else
+    warn("❌ Jeu non supporté par AppleX.")
 end
