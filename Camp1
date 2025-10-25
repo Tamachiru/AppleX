@@ -1,2 +1,3 @@
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace["Camp_Main_Tents%"].Camp1:GetPivot()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace["Checkpoints%"]["Camp 1"].SpawnLocation:GetPivot()
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, workspace["Checkpoints%"]["Camp 1"].SpawnLocation, 0)
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, workspace["Checkpoints%"]["Camp 1"].SpawnLocation, 1)
