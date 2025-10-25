@@ -1,2 +1,2 @@
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace["Camp_Main_Tents%"].Camp1.PrimaryPart.CFrame
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace["Camp_Main_Tents%"].Camp1:FindFirstChildWhichIsA("BasePart").CFrame
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace["Checkpoints%"]["Camp 1"].SpawnLocation.CFrame
