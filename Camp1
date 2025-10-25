@@ -1,1 +1,2 @@
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3688, 229, 271)
+game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = workspace["Camp_Main_Tents%"].Camp1.CFrame
+game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = workspace["Checkpoints%"]["Camp 1"].SpawnLocation.CFrame
