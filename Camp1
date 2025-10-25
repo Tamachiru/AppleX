@@ -1,11 +1,1 @@
-local function getPart(model)
-	for _, v in ipairs(model:GetDescendants()) do
-		if v:IsA("BasePart") then
-			return v
-		end
-	end
-end
-
-local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
-hrp.CFrame = getPart(workspace["Camp_Main_Tents%"].Camp1).CFrame
-hrp.CFrame = workspace["Checkpoints%"]["Camp 1"].SpawnLocation.CFrame
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace["Camp_Main_Tents%"].Camp1:GetPivot()
