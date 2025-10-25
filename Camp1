@@ -1,3 +1,2 @@
-game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = workspace["Camp_Main_Tents%"].Camp1.CFrame
-wait(0.5)
-game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = workspace["Checkpoints%"]["Camp 1"].SpawnLocation.CFrame
+game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = workspace:WaitForChild("Camp_Main_Tents%"):WaitForChild("Camp1").CFrame
+game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = workspace:WaitForChild("Checkpoints%"):WaitForChild("Camp 1"):WaitForChild("SpawnLocation").CFrame
